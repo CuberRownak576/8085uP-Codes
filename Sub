@@ -1,0 +1,12 @@
+mvi c,00
+lda 1
+mov b,a
+lda 2
+sub b 
+jnc Y
+inr a
+inr c
+Y: sta 3
+mov a,c
+sta 4
+hlt
